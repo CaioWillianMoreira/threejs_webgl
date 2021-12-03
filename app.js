@@ -21,9 +21,14 @@ app.get('/4', (req, res) => {
   res.render('pages/aulas/4')
 });
 
-// 4. Renderização com WebGL
+// 5. Criando sua primeira cena: conceitos básicos
 app.get('/5', (req, res) => {
   res.render('pages/aulas/5')
+});
+
+// 6. Câmeras e renderização
+app.get('/6', (req, res) => {
+  res.render('pages/aulas/6')
 });
 
 // Server
