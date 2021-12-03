@@ -14,6 +14,10 @@ const cube = new THREE.Mesh(
 
 scene.add(cube);
 
+// Animação do cubo
+cube.rotation.x = 90;
+cube.rotation.y = 90;
+
 // pede pro render desenhar
 
 renderer.render(scene, camera);
