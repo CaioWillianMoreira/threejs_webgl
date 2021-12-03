@@ -1,4 +1,4 @@
-// Renderer
+// Cria o renderer "canvas com largura e altura"
 const options = {
   targetSelector: '#scene', // Onde o renderer deve desenhar > id #scene
   with: 800,
@@ -14,3 +14,7 @@ renderer.setSize(
 document.querySelector(
   options.targetSelector
 ).appendChild(renderer.domElement);
+
+
+// Cria a scena
+const scene = new THREE.Scene();

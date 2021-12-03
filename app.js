@@ -6,7 +6,7 @@ app.use(express.static(__dirname + '/public'))
 // carrega ejs
 app.set('view engine', 'ejs')
 
-// pagina home
+// pagina exemplo
 app.get(['/', '/home'], (req, res) => {
   res.render('pages/index')
 })
@@ -16,9 +16,14 @@ app.get('/3', (req, res) => {
   res.render('pages/aulas/3')
 });
 
-// pagina 404
-app.get('*', (req, res) => {
-  res.render('pages/404')
+// 4. Renderização com WebGL
+app.get('/4', (req, res) => {
+  res.render('pages/aulas/4')
+});
+
+// 4. Renderização com WebGL
+app.get('/5', (req, res) => {
+  res.render('pages/aulas/5')
 });
 
 // Server
