@@ -31,6 +31,11 @@ app.get('/6', (req, res) => {
   res.render('pages/aulas/6')
 });
 
+// 6. Animation loop
+app.get('/7', (req, res) => {
+  res.render('pages/aulas/7')
+});
+
 // Server
 app.listen(3000, () => {
   console.log("Aplicação rodando na porta 3000 ")

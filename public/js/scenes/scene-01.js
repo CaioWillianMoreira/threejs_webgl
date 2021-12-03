@@ -15,9 +15,12 @@ const cube = new THREE.Mesh(
 scene.add(cube);
 
 // Animação do cubo
-cube.rotation.x = 90;
-cube.rotation.y = 90;
+renderer.setAnimationLoop(() => {
+  // posição do cubo
+  cube.rotation.x += 0.01;
+  cube.rotation.y += 0.01;
+  // pede pro render desenhar
+  renderer.render(scene, camera);
+});
 
-// pede pro render desenhar
 
-renderer.render(scene, camera);
