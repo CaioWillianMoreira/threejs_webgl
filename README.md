@@ -108,4 +108,4 @@ http-server -p 3000 --cors
 * [Three.js](https://threejs.org/) - Three.js
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for deta
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/CaioWillianMoreira/threejs_webgl/blob/master/.LICENCE.MD) file for deta
