@@ -1,0 +1,13 @@
+footer {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  text-align: center;
+  background-color: rgb(192, 191, 191);
+}
+
+footer p {
+  margin: 0;
+  padding: 10px;
+  text-transform: uppercase;
+}

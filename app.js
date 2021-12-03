@@ -7,14 +7,21 @@ app.use(express.static(__dirname + '/public'))
 app.set('view engine', 'ejs')
 
 // pagina home
-app.get(['/', '/home'], function(req, res){
-    res.render('pages/index')
+app.get(['/', '/home'], (req, res) => {
+  res.render('pages/index')
 })
-// pagina 404
-app.get('*', function(req, res){
-    res.render('pages/404')
+
+// 3. Setup e Template Básico
+app.get('/3', (req, res) => {
+  res.render('pages/aulas/3')
 });
 
-app.listen(3000, function(){
-    console.log("Aplicação rodando na porta 3000 ")
+// pagina 404
+app.get('*', (req, res) => {
+  res.render('pages/404')
+});
+
+// Server
+app.listen(3000, () => {
+  console.log("Aplicação rodando na porta 3000 ")
 });
